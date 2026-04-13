@@ -243,7 +243,7 @@ If you find this work helpful, please consider citing it:
 ```latex
 @article{xie2025phyavbench,
   title={PhyAVBench: A Challenging Audio Physics-Sensitivity Benchmark for Physically Grounded Text-to-Audio-Video Generation},
-  author={Xie, Tianxin and Lei, Wentao and Huang, Guanjie and Zhang, Pengfei and Jiang, Kai and Zhang, Chunhui and Ma, Fengji and He, Haoyu and Zhang, Han and He, Jiangshan and others},
+  author={Xie, Tianxin and Lei, Wentao and Jiang, Kai and Huang, Guanjie and Zhang, Pengfei and Zhang, Chunhui and Ma, Fengji and He, Haoyu and Zhang, Han and He, Jiangshan and others},
   journal={arXiv preprint arXiv:2512.23994},
   year={2025}
 }
