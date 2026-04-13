@@ -1,0 +1,25 @@
+[project]
+name = "phyavbench"
+version = "0.1.0"
+description = "The evaluation tool for the PhyAVBench benchmark. Paper: https://arxiv.org/abs/2512.23994"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.21.0", "tqdm>=4.67.3"]
+
+[project.scripts]
+phyavbench = "phyavbench:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest>=8.3.5", "ruff>=0.15.10"]
+
+[tool.ruff]
+# Set the maximum line length to 79.
+line-length = 119
+
+[tool.ruff.lint]
+# Add the `line-too-long` rule to the enforced rule set.
+extend-select = ["E501"]

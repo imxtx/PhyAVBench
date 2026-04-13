@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache
+.ruff_cache/
+.python-version
+
+# Virtual environments
+.venv
+
+# input and output
+test_data/
+output/
+
+# checkpoints
+.checkpoints/
+
+# IDE settings
+.vscode/*
+!.vscode/settings.json
