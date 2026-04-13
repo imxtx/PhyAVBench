@@ -1,8 +1,12 @@
+<script setup lang="ts">
+const baseUrl = import.meta.env.BASE_URL
+</script>
+
 <template>
   <section class="section">
     <h2>Performance Comparison</h2>
     <figure class="rador-figure">
-      <img class="rador-image" src="/images/rador.png" alt="Audio-Physics Sensitivity Test overview" />
+      <img class="rador-image" :src="`${baseUrl}images/rador.png`" alt="Audio-Physics Sensitivity Test overview" />
       <figcaption>
         Figure 2. The audio-physics grounding performance of SOTA T2AV, I2AV, and V2A models measured by CPRS.
       </figcaption>

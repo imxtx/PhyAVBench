@@ -1,8 +1,12 @@
+<script setup lang="ts">
+const baseUrl = import.meta.env.BASE_URL
+</script>
+
 <template>
   <section class="section">
     <h2>Data Curation Pipeline</h2>
     <figure class="pipeline-figure">
-      <img class="pipeline-image" src="/images/pipeline.png" alt="Data Curation Pipeline overview" />
+      <img class="pipeline-image" :src="`${baseUrl}images/pipeline.png`" alt="Data Curation Pipeline overview" />
       <figcaption>
         Figure 3. Overview of the proposed Data Curation Pipeline.
       </figcaption>

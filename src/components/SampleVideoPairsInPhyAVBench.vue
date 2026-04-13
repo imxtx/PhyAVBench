@@ -14,6 +14,7 @@ type RawGroup = {
 const groups = ref<VideoGroup[]>([])
 const isLoading = ref(true)
 const loadError = ref('')
+const baseUrl = import.meta.env.BASE_URL
 
 function parseJsonl(content: string): VideoGroup[] {
   return content
@@ -32,7 +33,7 @@ function parseJsonl(content: string): VideoGroup[] {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/videos480p/10_groups.jsonl')
+    const response = await fetch(`${baseUrl}videos480p/10_groups.jsonl`)
     if (!response.ok) {
       throw new Error(`Failed to load groups: ${response.status}`)
     }

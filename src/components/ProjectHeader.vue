@@ -1,7 +1,11 @@
+<script setup lang="ts">
+const baseUrl = import.meta.env.BASE_URL
+</script>
+
 <template>
   <section class="section project-header">
     <h1 class="page-title">PhyAVBench: A Challenging Audio Physics-Sensitivity Benchmark for Physically Grounded Text-to-Audio-Video Generation</h1>
-    <img alt="PhyAVBench logo" class="project-logo" src="/images/logo.png" />
+    <img alt="PhyAVBench logo" class="project-logo" :src="`${baseUrl}images/logo.png`" />
 
     <div class="summary-block">
       <h2>Abstract</h2>

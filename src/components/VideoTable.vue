@@ -18,6 +18,8 @@ const props = defineProps<{
   group: VideoGroup
 }>()
 
+const baseUrl = import.meta.env.BASE_URL
+
 const displayId = computed(() => props.group.id.replace(/_[ab]$/, ''))
 
 const modelEntries: ModelEntry[] = [
@@ -41,7 +43,7 @@ function getVideoPath(folder: string, variant: 'a' | 'b'): string {
         : props.group.gtB
       : `${props.group.id}_${variant}`
 
-  return `/videos480p/${folder}/${fileName}.mp4`
+  return `${baseUrl}videos480p/${folder}/${fileName}.mp4`
 }
 
 function getMelPath(folder: string, variant: 'a' | 'b'): string {
@@ -52,7 +54,7 @@ function getMelPath(folder: string, variant: 'a' | 'b'): string {
         : props.group.gtB
       : `${props.group.id}_${variant}`
 
-  return `/mels/${folder}/${fileName}.png`
+  return `${baseUrl}mels/${folder}/${fileName}.png`
 }
 
 function formatBoldText(text: string): string {
