@@ -22,3 +22,6 @@ output/
 # IDE settings
 .vscode/*
 !.vscode/settings.json
+
+fix_id.py
+map.txt
