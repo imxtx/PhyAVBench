@@ -243,10 +243,10 @@ Matched pairs unexpectedly low:
 
 If you find this work helpful, please consider citing it:
 
-```latex
+```bibtex
 @article{xie2025phyavbench,
-  title={PhyAVBench: A Challenging Audio Physics-Sensitivity Benchmark for Physically Grounded Text-to-Audio-Video Generation},
-  author={Xie, Tianxin and Lei, Wentao and Jiang, Kai and Huang, Guanjie and Zhang, Pengfei and Zhang, Chunhui and Ma, Fengji and He, Haoyu and Zhang, Han and He, Jiangshan and others},
+  title={Phyavbench: A challenging audio physics-sensitivity benchmark for physically grounded text-to-audio-video generation},
+  author={Xie, Tianxin and Lei, Wentao and Jiang, Kai and Huang, Guanjie and Zhang, Pengfei and Zhang, Chunhui and Ma, Fengji and He, Haoyu and Zhang, Han and He, Jiangshan and Wang, Jinting and Fang, Linghan and Gao, Lufei and Ablet, Orkesh and Zhang, Peihua and Hu, Ruolin and Li, Shengyu and Lin, Weilin and Feng, Xiaoyang and Yang, Xinyue and Rong, Yan and Wang, Yanyun and Shao, Zihang and Zhao, Zelin and Li, Chenxing and Yang, Shan and Wang, Wenfu and Yu, Meng and Yu, Dong and Liu, Li},
   journal={arXiv preprint arXiv:2512.23994},
   year={2025}
 }
