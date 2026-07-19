@@ -7,7 +7,9 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2512.23994"><img src="https://img.shields.io/badge/arXiv-2512.23994-b31b1b.svg" alt="arXiv"/></a>
   <img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"/>
+  <a href="https://huggingface.co/datasets/imxtx/PhyAV-Sound-11K"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20PhyAV--Sound--11K-Dataset-yellow"/></a>
 </p>
+
 
 PhyAVBench is the first benchmark for audio-physics grounding in T2AV/I2AV/V2A models, built on <strong>PhyAV-Sound-11K</strong> (11,605 videos, 25.5 hours, 184 participants). It includes 337 paired-prompt groups (avg. 17 videos/group), covering 6 dimensions and 41 test points, and evaluates 17 state-of-the-art models using Audio-Physics Sensitivity Test (APST) and Contrastive Physical Response Score (CPRS).
 
@@ -17,6 +19,7 @@ PhyAVBench is the first benchmark for audio-physics grounding in T2AV/I2AV/V2A m
 
 ## News
 
+* **[2026-07-19]** We have released **[PhyAV-Sound-11K](https://huggingface.co/datasets/imxtx/PhyAV-Sound-11K)** on HuggingFace.
 * **[2026-04-13]** We release 337 prompt groups (`src/phyavbench/data/prompt_all.jsonl`) along with their averaged ground-truth CLAP and ImageBind embeddings (`embeddings/gt_a2b`) used to compute CPRS scores, which are extracted from 11,605 newly recored audio samples.
 
 ## Setup
