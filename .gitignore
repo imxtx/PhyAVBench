@@ -25,3 +25,8 @@ output/
 
 fix_id.py
 map.txt
+
+.DS_Store
+
+node_modules/
+public/
