@@ -11,7 +11,7 @@
 </p>
 
 
-PhyAVBench is the first benchmark for audio-physics grounding in T2AV/I2AV/V2A models, built on <strong>PhyAV-Sound-11K</strong> (11,605 videos, 25.5 hours, 184 participants). It includes 337 paired-prompt groups (avg. 17 videos/group), covering 6 dimensions and 41 test points, and evaluates 17 state-of-the-art models using Audio-Physics Sensitivity Test (APST) and Contrastive Physical Response Score (CPRS).
+PhyAVBench is the first benchmark for audio-physics grounding in T2AV/I2AV/V2A models, built on <strong>PhyAV-Sound-11K</strong> (11,605 videos, 25.5 hours, 184 participants). It includes 337 paired-prompt groups (avg. 17 videos/group), covering 6 dimensions and 41 test points, and evaluates 17 state-of-the-art models using the Audio-Physics Sensitivity Test (APST) and Contrastive Physical Response Score (CPRS).
 
 <p align="center">
   <img src="assets/imgs/radar.png" alt="radar"/>
@@ -19,8 +19,9 @@ PhyAVBench is the first benchmark for audio-physics grounding in T2AV/I2AV/V2A m
 
 ## News
 
+* **[2026-10-15]** PhyAVBench will be presented in [oral and poster sessions](https://2026.acmmm.org/site/technical-programme.html) at MM 2026. See you in Rio de Janeiro.
 * **[2026-07-19]** We have released **[PhyAV-Sound-11K](https://huggingface.co/datasets/imxtx/PhyAV-Sound-11K)** on HuggingFace.
-* **[2026-04-13]** We release 337 prompt groups (`src/phyavbench/data/prompt_all.jsonl`) along with their averaged ground-truth CLAP and ImageBind embeddings (`embeddings/gt_a2b`) used to compute CPRS scores, which are extracted from 11,605 newly recored audio samples.
+* **[2026-04-13]** We release 337 prompt groups (`src/phyavbench/data/prompt_all.jsonl`) along with their averaged ground-truth CLAP and ImageBind embeddings (`embeddings/gt_a2b`) used to compute CPRS scores, which are extracted from 11,605 newly recorded audio samples.
 
 ## Setup
 
@@ -30,7 +31,7 @@ First, clone this repo and its submodules (CLAP and ImageBind):
 git clone --recursive https://github.com/imxtx/PhyAVBench.git
 ```
 
-Second, creat a virtual envrionment (e.g., conda) and install dependecies:
+Second, create a virtual environment (e.g., conda) and install dependencies:
 
 
 ```bash
