@@ -19,6 +19,8 @@ PhyAVBench is the first benchmark for audio-physics grounding in T2AV/I2AV/V2A m
 
 ## News
 
+* **[2016-11-19]** We have open-sourced the real-world audio corresponding to all videos, which can be downloaded from HuggingFace. 
+* **[2026-11-13]** PhyAVBench has received the Outstanding Paper Award!🏆 Congratulations to all the authors!
 * **[2026-10-15]** PhyAVBench will be presented in [oral and poster sessions](https://2026.acmmm.org/site/technical-programme.html) at MM 2026. See you in Rio de Janeiro.
 * **[2026-07-19]** We have released **[PhyAV-Sound-11K](https://huggingface.co/datasets/imxtx/PhyAV-Sound-11K)** on HuggingFace.
 * **[2026-04-13]** We release 337 prompt groups (`src/phyavbench/data/prompt_all.jsonl`) along with their averaged ground-truth CLAP and ImageBind embeddings (`embeddings/gt_a2b`) used to compute CPRS scores, which are extracted from 11,605 newly recorded audio samples.
