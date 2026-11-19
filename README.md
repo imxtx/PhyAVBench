@@ -17,6 +17,8 @@ PhyAVBench is the first benchmark for audio-physics grounding in T2AV/I2AV/V2A m
   <img src="assets/imgs/radar.png" alt="radar"/>
 </p>
 
+*This work was mainly supported by Prof. [Li Liu](https://scholar.google.com/citations?user=KQ2S01UAAAAJ&hl=en) from HKUST(GZ) and Dr. [Chenxing Li](https://scholar.google.com/citations?user=-ZMMe-UAAAAJ&hl=en) from Tencent Hunyuan.*
+
 ## News
 
 * **[2016-11-19]** We have open-sourced the real-world audio corresponding to all videos, which can be downloaded from HuggingFace. 
@@ -246,12 +248,36 @@ Matched pairs unexpectedly low:
 
 If you find this work helpful, please consider citing it:
 
+arXiv version:
+
 ```bibtex
 @article{xie2025phyavbench,
   title={Phyavbench: A challenging audio physics-sensitivity benchmark for physically grounded text-to-audio-video generation},
   author={Xie, Tianxin and Lei, Wentao and Jiang, Kai and Huang, Guanjie and Zhang, Pengfei and Zhang, Chunhui and Ma, Fengji and He, Haoyu and Zhang, Han and He, Jiangshan and Wang, Jinting and Fang, Linghan and Gao, Lufei and Ablet, Orkesh and Zhang, Peihua and Hu, Ruolin and Li, Shengyu and Lin, Weilin and Feng, Xiaoyang and Yang, Xinyue and Rong, Yan and Wang, Yanyun and Shao, Zihang and Zhao, Zelin and Li, Chenxing and Yang, Shan and Wang, Wenfu and Yu, Meng and Yu, Dong and Liu, Li},
   journal={arXiv preprint arXiv:2512.23994},
   year={2025}
+}
+```
+
+ACM MM version:
+
+```bibtex
+@inproceedings{xie2026phyavbench,
+author = {Xie, Tianxin and Lei, Wentao and Jiang, Kai and Huang, Guanjie and Zhang, Pengfei and Zhang, Chunhui and Ma, Fengji and He, Haoyu and Zhang, Han and He, Jiangshan and Wang, Jinting and Fang, Linghan and Gao, Lufei and Ablet, Orkesh and Zhang, Peihua and Hu, Ruolin and Li, Shengyu and Lin, Weilin and Feng, Xiaoyang and Yang, Xinyue and Rong, Yan and Wang, Yanyun and Shao, Zihang and Zhao, Zelin and Li, Chenxing and Yang, Shan and Wang, Wenfu and Yu, Meng and Yu, Dong and Liu, Li},
+title = {PhyAVBench: A Challenging Audio Physics-Sensitivity Benchmark for Physically Grounded Text-to-Audio-Video Generation},
+year = {2026},
+isbn = {9798400722134},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3767308.3836107},
+doi = {10.1145/3767308.3836107},
+abstract = {Text-to-audio-video (T2AV) generation is central to applications such as filmmaking and world modeling. However, current models often fail to produce physically plausible sounds. Previous benchmarks in this area primarily focus on audio-video temporal synchronization, while largely overlooking explicit evaluation of audio-physics grounding, thereby limiting the study of physically plausible audio-visual generation. To address this issue, we present PhyAVBench, the first benchmark designed to systematically evaluate the audio-physics grounding capabilities of T2AV, image-to-audio-video (I2AV), and video-to-audio (V2A) models. PhyAVBench offers PhyAV-Sound-11K, a new dataset of 25.5 hours of 11,605 audible videos collected from 184 participants to ensure diversity and avoid data leakage. It contains 337 paired-prompt groups with controlled physical variations that drive sound differences, each grounded with an average of 17 videos and spanning 6 audio-physics dimensions and 41 fine-grained test points, from basic phenomena (e.g., collision) to complex effects (e.g., Helmholtz resonance). Each video includes step-by-step audio-physics reasoning, and each prompt pair is annotated with the physical factors underlying their acoustic differences. Importantly, unlike prior benchmarks that cannot measure sensitivity to underlying acoustic conditions, PhyAVBench leverages paired text prompts to evaluate this capability. We term this evaluation paradigm the Audio-Physics Sensitivity Test (APST) and introduce a novel metric, the Contrastive Physical Response Score (CPRS), which quantifies the acoustic consistency between generated videos and their real-world counterparts. We conduct a comprehensive evaluation of 17 state-of-the-art (SOTA) models across T2AV, I2AV, and V2A tasks, along with human studies involving 74 participants, which show a strong positive correlation with the CPRS metric. Our results reveal that even leading commercial models struggle with fundamental audio-physical phenomena, exposing a critical gap beyond audio-visual synchronization and pointing to future research directions. We hope PhyAVBench will serve as a foundation for advancing physically grounded audio-visual generation. Code and datasets are available at https://github.com/imxtx/PhyAVBench.},
+booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},
+pages = {12136–12145},
+numpages = {10},
+keywords = {audio-video generation, benchmark, physics-sensitivity, physical},
+location = {Rio de Janeiro, Brazil},
+series = {MM '26}
 }
 ```
 
